@@ -1,0 +1,83 @@
+{
+  "category": "kale",
+  //"the cat should be treated as an enum with: pepper, tomato, lettuce, kale, chard, pak_choy",
+  "variety": "lacinato",
+  "germinate_separate": false,
+  //this implies we'll offer a separate germination tray for things like tomatoes and cukes",
+  "photoperiods_DLI": {
+    "germ": null,
+    "veg": [12, 16],
+    //"this is an estimate"
+    "fruit": null
+  },
+  "photoperiods_PPFD_and_hours": {
+    "germ": null,
+    "veg": [[18, 6], [230, 260]],
+    "fruit": null,
+    "comments": "Some research suggests a 6/2 cycle three times a day with 290 PPFD is the most productive possible lighting for leafy greens."
+  },
+  "temps": {
+    "extremes": [40, 80],
+    "optimal": [55, 70],
+    "comments": "kale is a cool weather crop, but will grow acceptably at room temp"
+  },
+  "nutrients_EC_and_ppm": {
+    "germ": null,
+    "veg": [[0.8, 1.4, 1.8], [400, 700, 900]],
+    //min, ideal, high
+    "fruit": null,
+    "comments": "kale is rather forgiving in nutrient range"
+  },
+  "pH_extremes": [5.5, 6.5],
+  "pH_optimal": [5.8, 6.2],
+  //min, high
+  "spacing": {
+    "baby greens": {
+      "nursery tray": ["50-cell-plug", "50-cell-deep"],
+      //have a map to rank trays by size, the above is the minimum size tray.
+      //warn user if they try to use smaller
+      "dim": [2, 2], //in inches
+      "row": [2, 2]
+    },
+    "standard": {
+      "nursery tray": ["37-cell-deep"],
+      "dim": [2.4, 2.4], //in inches
+      "row": [1.5, 3.75],
+      "comment": "based off row spacing, in inches. separation in rows, then distance between rows"
+    },
+    "continual": {
+      "nursery": null,
+      "dim": [15, 15],
+      "row": [12, 18]
+    },
+    "vertical":{
+      "nursery": null,
+      "dim": null,
+      "row": null
+    }// "we're keeping this null for now, for later use",
+  },
+  "baby_greens_suitable": true,
+  "commentsssd": "above parameter tells if the plant is good for the baby greens planting method in general, this method is planting in deep well nursery trays in eb and flow: https://www.greenhousemegastore.com/containers-trays/trays-flats/sureroots-50-deep-cell-plug-trays",
+  "lifecycle": {
+    "germ": [7,14], //germ, veg, and repro are for days from seed where the plant enters each nutrient stage
+    "veg": [18,24],
+    "repro": null, //is null for kale: we do not care for the reproductive stage of kale
+    "fruit": "array with range for when its expected that fruit harvest will begin",
+    "baby_greens": [21, 28],
+    "harvest": [42, 49], //time for one time crops (carrots, radish). for greens, time to full size (NOT BABY)
+    "continual_veg": true,
+    //some plants, like kale, can be planted for continuous harvest during vegetative stage
+    //if this is true, the plant is harvested until death and replacement.
+    "regrow": [5,9],
+    //regrow time for cont harvest plants like cilantro, basil, kale.
+    "end": "used for plants whose lifecycles completely end at some point and should be replaced",
+    //"the above will be null in non baby greens plants"
+  },
+  "comments": [
+    "kale is a cool weather crop. some growers even drop temps as low as 40F to improve flavor",
+    "kale can either be grown for early harvest ('baby greens'), or grown for an entire season to continually harvest leaves"
+  ]
+}
+//if baby greens suitable is true, add option to choose between
+//continual harvest and baby greens in the plant serach menu.
+

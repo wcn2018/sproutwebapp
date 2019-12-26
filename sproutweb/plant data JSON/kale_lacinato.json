@@ -1,0 +1,68 @@
+{
+  "category": "kale",
+  "variety": "lacinato",
+  "germinate_separate": false,
+  "photoperiods_DLI": {
+    "germ": null,
+    "veg": [12, 16],
+    "fruit": null
+  },
+  "photoperiods_PPFD_and_hours": {
+    "germ": null,
+    "veg": [[18, 6], [230, 260]],
+    "fruit": null,
+    "comments": "Some research suggests a 6/2 cycle three times a day with 290 PPFD is the most productive possible lighting for leafy greens."
+  },
+  "temps": {
+    "extremes": [40, 80],
+    "optimal": [55, 70],
+    "comments": "kale is a cool weather crop, but will grow acceptably at room temp"
+  },
+  "nutrients_EC_and_ppm": {
+    "germ": null,
+    "veg": [[0.8, 1.4, 1.8], [400, 700, 900]],
+    "fruit": null,
+    "comments": "kale is rather forgiving in nutrient range"
+  },
+  "pH_extremes": [5.5, 6.5],
+  "pH_optimal": [5.8, 6.2],
+  "spacing": {
+    "baby greens": {
+      "nursery tray": ["50-cell-plug", "50-cell-deep"],
+      "dim": [2, 2],
+      "row": [2, 2]
+    },
+    "standard": {
+      "nursery tray": ["37-cell-deep"],
+      "dim": [2.4, 2.4],
+      "row": [1.5, 3.75],
+    },
+    "continual": {
+      "nursery": null,
+      "dim": [15, 15],
+      "row": [12, 18]
+    },
+    "vertical":{
+      "nursery": null,
+      "dim": null,
+      "row": null
+    }
+  },
+  "baby_greens_suitable": true,
+  "lifecycle": {
+    "germ": [7,14],
+    "veg": [18,24],
+    "repro": null,
+    "fruit": "array with range for when its expected that fruit harvest will begin",
+    "baby_greens": [21, 28],
+    "harvest": [42, 49],
+    "continual_veg": true,
+    "regrow": [5,9],
+    "end": "used for plants whose lifecycles completely end at some point and should be replaced",
+  },
+  "comments": [
+    "kale is a cool weather crop. some growers even drop temps as low as 40F to improve flavor",
+    "kale can either be grown for early harvest ('baby greens'), or grown for an entire season to continually harvest leaves"
+  ]
+}
+
